@@ -1,0 +1,43 @@
+{
+  "mediaType": "application/ai-catalog+json",
+  "version": "1.0",
+  "publisher": {
+    "identifier": "gpaschercher-sudo.github.io",
+    "displayName": "MoveCo Express Assistant",
+    "identityType": "https-origin"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:gpaschercher-sudo.github.io:agent:moveco_dispatch",
+      "displayName": "MoveCo Express Assistant",
+      "description": "Check MoveCo Express residential moving van availability, place a 15-minute slot hold, or confirm a crew reschedule.",
+      "type": "application/a2a-agent-card+json",
+      "url": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/agent-card.json",
+      "targetDigest": "sha256:e5f6c695c1cbb29dc52920809fe6e8b7d811241110fd1cf05d6792c00955ee59",
+      "tags": [
+        "open-agentic-web",
+        "a2a",
+        "moveco"
+      ],
+      "publisher": {
+        "identifier": "gpaschercher-sudo.github.io",
+        "displayName": "MoveCo Express Assistant",
+        "identityType": "dns-or-platform-subpath"
+      },
+      "extensions": {
+        "org.projectnanda": {
+          "resolutionRole": "direct-agent-card",
+          "preferredDiscovery": "agent-manifest-and-a2a",
+          "resolutionProfile": "known-subject-resolution-02"
+        },
+        "org.worldwideagenticweb": {
+          "mvpProfile": "0.2",
+          "manifestUrl": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/agent-manifest.json",
+          "networkUrl": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/moveco_dispatch.network.json",
+          "factsManifestUrl": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/facts/agent-manifest.json",
+          "factsNetworkDigest": "sha256:1bcf386615b4ea1f19615ca0ca17e8177543bb82d8b4f61cfe08108fcbfe945f"
+        }
+      }
+    }
+  ]
+}
