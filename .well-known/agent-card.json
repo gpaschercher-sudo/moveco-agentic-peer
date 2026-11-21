@@ -1,0 +1,46 @@
+{
+  "name": "MoveCo Express Assistant",
+  "description": "Check MoveCo Express residential moving van availability, place a 15-minute slot hold, or confirm a crew reschedule.",
+  "version": "1.0.0",
+  "url": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/moveco_dispatch.network.json",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "moving-crew-dispatch",
+      "name": "Moving Van Quotes, 15m Slot Holds & Rescheduling",
+      "description": "Provides demonstration residential Luton van crew quotes, non-destructive 15-minute slot holds, and idempotent booking reschedules.",
+      "tags": [
+        "moving",
+        "logistics",
+        "slot-hold",
+        "demo-peer"
+      ]
+    }
+  ],
+  "extensions": {
+    "org.worldwideagenticweb": {
+      "mvpProfile": "0.2",
+      "manifestUrl": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/agent-manifest.json",
+      "networkUrl": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/moveco_dispatch.network.json",
+      "factsNetworkUrl": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/facts/moveco_dispatch_facts.network.json",
+      "browserExecuted": true
+    },
+    "org.projectnanda": {
+      "subjectUrnHint": "urn:air:gpaschercher-sudo.github.io:agent:moveco_dispatch",
+      "aiCatalogUrl": "https://gpaschercher-sudo.github.io/moveco-agentic-peer/ai-catalog.json",
+      "resolutionProfile": "known-subject-resolution-02"
+    }
+  }
+}
